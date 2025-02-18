@@ -8,12 +8,12 @@ public class RandomMaker {
 
     public static String randomUpperAlphabet(int length) {
         int rand ;
-        String s = "";
+        StringBuilder sb = new StringBuilder();
         for(int i = 0; i < length; i++){
             rand = (int) (Math.random() * (90 - 65+1) + 65);
-            s = s + (char)rand;
+            sb.append((char)rand);
         }
-        return s;
+        return sb.toString();
     }
 
     public static String rockPaperScissors() {
